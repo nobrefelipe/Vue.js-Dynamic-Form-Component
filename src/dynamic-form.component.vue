@@ -2,29 +2,25 @@
 
     <div class="dynamic-form-group">
 
-        <!-- TEXT INPUTS HERE -->
+        <!-- SINGLE FIELDS HERE -->
         <div v-for="item in form" v-if="item.type != 'group'" class="dynamic-form-group--item">
 
-            <input :type="item.type" :value="item.value" :placeholder="item.label"/>
+            <input :id="item.id" :type="item.type" :value="item.value" :placeholder="item.label"/>
 
-            <label v-if="check(item.type)"> {{ item.label }} </label>
+            <label :for="item.id" v-if="check(item.type)"> {{ item.label }} </label>
 
         </div>
 
-        <!-- CHECKBOXES AND RADIOS GROUPS HERE -->
+        <!-- FIELD GROUPS HERE -->
         <div v-for="item in form" v-if="item.type == 'group'" class="dynamic-form-group--item">
 
             <span v-for="element in item.elements"  class="dynamic-form-group--item-sub">
 
-                <label :for="element.id">
+                <input :id="element.id" :type="element.type" :value="element.value" :name="element.name"/>
 
-                    <input :id="element.id" :type="element.type" :value="element.value" :name="element.name"/>
+                <label :for="element.id">{{ element.label }}</label>
 
-                    {{ element.label }}
-
-                </label>
-
-              </span>
+            </span>
 
         </div>
 

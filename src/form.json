@@ -8,9 +8,9 @@
 
     {"type": "search", "value": "A search input", "label": "A search input"},
 
-    {"type": "checkbox", "value": "checkbox", "label": "A single checkbox"},
+    {"type": "checkbox", "id": "checkbox",  "value": "checkbox", "label": "A single checkbox"},
 
-    {"type": "radio", "value": "radio", "label": "A single radio"},
+    {"type": "radio", "id": "radio",  "value": "radio", "label": "A single radio"},
 
     {
         "type": "group",
