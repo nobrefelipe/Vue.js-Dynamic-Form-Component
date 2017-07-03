@@ -1,6 +1,6 @@
 # Vue.js Dynamic Form Component
 
-> A Vue.js component for generate forms from a json map
+> A Vue.js component for generating forms from a json map
 
 On going project for personal and professional use, feel free to clone and improve it!
 
