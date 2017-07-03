@@ -4,7 +4,7 @@
 
 On going project for personal and professional use, feel free to clone and improve it!
 
-<a href="http://jsfiddle.net/v8rvnz6d/" target="_blank" title="See demo on Fiddle">Demo</a>
+<a href="http://jsfiddle.net/v8rvnz6d/3/" target="_blank" title="See demo on Fiddle">Demo</a>
 
 ### Usage
 
