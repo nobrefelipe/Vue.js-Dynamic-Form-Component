@@ -14,11 +14,11 @@
         <!-- CHECKBOXES AND RADIOS GROUPS HERE -->
         <div v-for="item in form" v-if="item.type == 'group'" class="dynamic-form-group--item">
 
-                <span v-for="element in item.elements"  class="dynamic-form-group--item-sub">
+            <span v-for="element in item.elements"  class="dynamic-form-group--item-sub">
 
                 <input :type="element.type" :value="element.value" :name="element.name"/>
 
-                <label v-if="check(element.type)"> {{ element.label }} </label>
+                <label> {{ element.label }} </label>
 
               </span>
 
@@ -41,7 +41,7 @@
 
             /*
                 CHECK IF INPUT IS CHECKBOX OR RADIO SO WE DISPLAY THE LABEL
-                 - use the placeholder fot text fields
+                 - use the placeholder attribute for text fields
                  - remove this control to display label for all fields
             */
             check(type){
