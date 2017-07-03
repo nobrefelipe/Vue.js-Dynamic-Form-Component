@@ -13,15 +13,27 @@
     {"type": "radio", "id": "radio",  "value": "radio", "label": "A single radio"},
 
     {
+        "type": "select", "value":"", "label": "Dropdown",
+
+        "label": "Dorpdown",
+
+        "options": [
+
+            {"name": "Option 1", "value": "Value1"},
+            {"name": "Option 2", "value": "Value2"},
+            {"name": "Option 3", "value": "Value3"}
+
+        ]
+    },
+
+    {
         "type": "group",
 
         "elements": [
 
             { "type": "radio", "id": "radioA", "name": "radio1", "value": "radioA", "label": "Radio A"},
-
-            { "type": "radio",  "id": "radioB", "name": "radio1", "value": "radioB", "label": "Radio B"},
-
-            { "type": "radio",  "id": "radioC","name":"radio1", "value": "radioC", "label": "Radio C"}
+            { "type": "radio", "id": "radioB", "name": "radio1", "value": "radioB", "label": "Radio B"},
+            { "type": "radio", "id": "radioC","name":"radio1", "value": "radioC", "label": "Radio C"}
 
         ]
     },
@@ -32,9 +44,7 @@
         "elements": [
 
             { "type": "checkbox", "id": "checkboxA", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
-
             { "type": "checkbox", "id": "checkboxB", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
-
             { "type": "checkbox", "id": "checkboxC", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
 
         ]

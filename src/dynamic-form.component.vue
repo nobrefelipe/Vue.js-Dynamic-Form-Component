@@ -3,7 +3,7 @@
     <div class="dynamic-form-group">
 
         <!-- SINGLE FIELDS HERE -->
-        <div v-for="item in form" v-if="item.type != 'group'" class="dynamic-form-group--item">
+        <div v-for="item in form" v-if="item.type != 'group' && item.type != 'select'"  class="dynamic-form-group--item">
 
             <input :id="item.id" :type="item.type" :value="item.value" :placeholder="item.label"/>
 
@@ -21,6 +21,19 @@
                 <label :for="element.id">{{ element.label }}</label>
 
             </span>
+
+        </div>
+
+        <!-- DROPDOWNS HERE -->
+        <div v-for="item in form" v-if="item.type == 'select'" class="dynamic-form-group--item">
+
+            <label>{{ item.label }}</label>
+
+            <select>
+
+                <option v-for="option in item.options" :value="option.value">{{ option.name }}</option>
+
+            </select>
 
         </div>
 
@@ -46,9 +59,9 @@
             */
             check(type){
 
-                return ( type == 'radio' || type == 'checkbox') ? true : false;
+                return ( type == 'radio' || type == 'checkbox' || type == 'select') ? true : false;
 
-            }
+            },
 
         }
     };

@@ -21,30 +21,51 @@ For now the `form.json` maps to input type text, submit, search, password, check
 [
 
     {"type": "text", "value": "A text input", "label": "A text input"},
-    {"type": "submit", "value": "button", "label": ""},
+
     {"type": "password", "value": "mypass", "label": "password"},
+
+    {"type": "submit", "value": "button", "label": ""},
+
     {"type": "search", "value": "A search input", "label": "A search input"},
-    {"type": "checkbox", "value": "checkbox", "label": "A single checkbox"},
-    {"type": "radio", "value": "radio", "label": "A single radio"},
+
+    {"type": "checkbox", "id": "checkbox",  "value": "checkbox", "label": "A single checkbox"},
+
+    {"type": "radio", "id": "radio",  "value": "radio", "label": "A single radio"},
 
     {
-        "type": "group",
-        "elements": [
+        "type": "select", "value":"", "label": "Dropdown",
 
-            { "type": "radio", "name": "radio1", "value": "radioA", "label": "Radio A"},
-            { "type": "radio", "name": "radio1", "value": "radioB", "label": "Radio B"},
-            { "type": "radio", "name": "radio1", "value": "radioC", "label": "Radio C"}
+        "label": "Dorpdown",
+
+        "options": [
+
+            {"name": "Option 1", "value": "Value1"},
+            {"name": "Option 2", "value": "Value2"},
+            {"name": "Option 3", "value": "Value3"}
 
         ]
     },
 
     {
         "type": "group",
+
         "elements": [
 
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
+            { "type": "radio", "id": "radioA", "name": "radio1", "value": "radioA", "label": "Radio A"},
+            { "type": "radio", "id": "radioB", "name": "radio1", "value": "radioB", "label": "Radio B"},
+            { "type": "radio", "id": "radioC","name":"radio1", "value": "radioC", "label": "Radio C"}
+
+        ]
+    },
+
+    {
+        "type": "group",
+
+        "elements": [
+
+            { "type": "checkbox", "id": "checkboxA", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
+            { "type": "checkbox", "id": "checkboxB", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
+            { "type": "checkbox", "id": "checkboxC", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
 
         ]
     }
@@ -53,7 +74,6 @@ For now the `form.json` maps to input type text, submit, search, password, check
 
 
 ### TODO
- - Add Dropdown
  - Add hints and/or validation messages
  - Add submit callback option (?)
  - Style it (?)
