@@ -39,9 +39,15 @@
 
         methods:{
 
-            // CHECK IF INPUT IS CHECKBOX OR RADIO SO WE DISPLAY THE LABEL
+            /*
+                CHECK IF INPUT IS CHECKBOX OR RADIO SO WE DISPLAY THE LABEL
+                 - use the placeholder fot text fields
+                 - remove this control to display label for all fields
+            */
             check(type){
+
                 return ( type == 'radio' || type == 'checkbox') ? true : false;
+
             }
 
         }

@@ -1,30 +1,41 @@
 [
 
-    {"type":"text","value":"A text input", "label": "A text input"},
+    {"type": "text", "value": "A text input", "label": "A text input"},
+
     {"type": "password", "value": "mypass", "label": "password"},
-    {"type":"submit","value":"button", "label": ""},
-    {"type":"search","value":"A search input", "label": "A search input"},
-    {"type":"checkbox","value":"checkbox", "label": "A single checkbox"},
-    {"type":"radio","value":"radio", "label": "A single radio"},
+
+    {"type": "submit", "value": "button", "label": ""},
+
+    {"type": "search", "value": "A search input", "label": "A search input"},
+
+    {"type": "checkbox", "value": "checkbox", "label": "A single checkbox"},
+
+    {"type": "radio", "value": "radio", "label": "A single radio"},
 
     {
         "type": "group",
+
         "elements": [
 
-            { "type":"radio", "name":"radio1", "value":"radioA", "label": "Radio A"},
-            { "type":"radio", "name":"radio1", "value":"radioB", "label": "Radio B"},
-            { "type":"radio", "name":"radio1", "value":"radioC", "label": "Radio C"}
+            { "type": "radio", "name": "radio1", "value": "radioA", "label": "Radio A"},
+
+            { "type": "radio", "name": "radio1", "value": "radioB", "label": "Radio B"},
+
+            { "type": "radio", "name":"radio1", "value": "radioC", "label": "Radio C"}
 
         ]
     },
 
     {
         "type": "group",
+
         "elements": [
 
-            { "type":"checkbox", "name":"checkbox1", "value":"checkboxA", "label": "Checkbox A"},
-            { "type":"checkbox", "name":"checkbox1", "value":"checkboxB", "label": "Checkbox B"},
-            { "type":"checkbox", "name":"checkbox1", "value":"checkboxC", "label": "Checkbox C"}
+            { "type": "checkbox", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
+
+            { "type": "checkbox", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
+
+            { "type": "checkbox", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
 
         ]
     }
