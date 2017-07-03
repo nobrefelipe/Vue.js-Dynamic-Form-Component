@@ -6,22 +6,23 @@ On going project for personal and professional use, feel free to clone and impro
 
 <a href="http://jsfiddle.net/v8rvnz6d/" target="_blank" title="See demo on Fiddle">Demo</a>
 
-#### Usage
+### Usage
 
 Import the component then use it passing the form map as a prop:
 
 `<dynamic-form :form="form"></dynamic-form>`
 
 
-#### Form Structure Sample
+### Form Structure Sample
 
-For now the form.json maps to input type text, submit, search, password, checkbox and radio. With the latest two able to be grouped.
+For now the `form.json` maps to input type text, submit, search, password, checkbox and radio. With the latest two able to be grouped.
 
 ```
 [
 
     {"type": "text", "value": "A text input", "label": "A text input"},
     {"type": "submit", "value": "button", "label": ""},
+    {"type": "password", "value": "mypass", "label": "password"},
     {"type": "search", "value": "A search input", "label": "A search input"},
     {"type": "checkbox", "value": "checkbox", "label": "A single checkbox"},
     {"type": "radio", "value": "radio", "label": "A single radio"},
@@ -51,7 +52,7 @@ For now the form.json maps to input type text, submit, search, password, checkbo
 ```
 
 
-#### TODO
+### TODO
  - Add Dropdown
  - Add hints and/or validation messages
  - Add submit callback option (?)

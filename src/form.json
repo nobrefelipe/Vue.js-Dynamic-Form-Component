@@ -1,6 +1,7 @@
 [
 
     {"type":"text","value":"A text input", "label": "A text input"},
+    {"type": "password", "value": "mypass", "label": "password"},
     {"type":"submit","value":"button", "label": ""},
     {"type":"search","value":"A search input", "label": "A search input"},
     {"type":"checkbox","value":"checkbox", "label": "A single checkbox"},
