@@ -17,11 +17,11 @@
 
         "elements": [
 
-            { "type": "radio", "name": "radio1", "value": "radioA", "label": "Radio A"},
+            { "type": "radio", "id": "radioA", "name": "radio1", "value": "radioA", "label": "Radio A"},
 
-            { "type": "radio", "name": "radio1", "value": "radioB", "label": "Radio B"},
+            { "type": "radio",  "id": "radioB", "name": "radio1", "value": "radioB", "label": "Radio B"},
 
-            { "type": "radio", "name":"radio1", "value": "radioC", "label": "Radio C"}
+            { "type": "radio",  "id": "radioC","name":"radio1", "value": "radioC", "label": "Radio C"}
 
         ]
     },
@@ -31,11 +31,11 @@
 
         "elements": [
 
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
+            { "type": "checkbox", "id": "checkboxA", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
 
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
+            { "type": "checkbox", "id": "checkboxB", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
 
-            { "type": "checkbox", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
+            { "type": "checkbox", "id": "checkboxC", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
 
         ]
     }

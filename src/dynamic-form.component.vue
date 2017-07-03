@@ -16,9 +16,13 @@
 
             <span v-for="element in item.elements"  class="dynamic-form-group--item-sub">
 
-                <input :type="element.type" :value="element.value" :name="element.name"/>
+                <label :for="element.id">
 
-                <label> {{ element.label }} </label>
+                    <input :id="element.id" :type="element.type" :value="element.value" :name="element.name"/>
+
+                    {{ element.label }}
+
+                </label>
 
               </span>
 
