@@ -3,7 +3,7 @@
     <div class="dynamic-form-group">
 
         <!-- SINGLE FIELDS HERE -->
-        <div v-for="item in form" v-if="item.type != 'group' && item.type != 'select'"  class="dynamic-form-group--item">
+        <div v-for="item in form" v-if="item.type != 'group' && item.type != 'select' && item.type != 'submit'"  class="dynamic-form-group--item">
 
             <input :id="item.id" :type="item.type" :value="item.value" :placeholder="item.label"/>
 
@@ -34,6 +34,13 @@
                 <option v-for="option in item.options" :value="option.value">{{ option.name }}</option>
 
             </select>
+
+        </div>
+
+        <!-- SUBMIT HERE -->
+        <div v-for="item in form" v-if="item.type == 'submit'"  class="dynamic-form-group--item">
+
+            <input :id="item.id" :type="item.type" :value="item.value" :placeholder="item.label"/>
 
         </div>
 

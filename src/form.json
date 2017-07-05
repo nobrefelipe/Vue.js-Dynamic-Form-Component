@@ -1,19 +1,19 @@
 [
 
-    {"type": "text", "value": "A text input", "label": "A text input"},
+    {"type": "text", "id": "text",  "value": "A text input", "label": "A text input"},
 
-    {"type": "password", "value": "mypass", "label": "password"},
+    {"type": "password", "id": "password", "value": "mypass", "label": "password"},
 
-    {"type": "submit", "value": "button", "label": ""},
+    {"type": "submit", "id": "submit", "value": "button", "label": ""},
 
-    {"type": "search", "value": "A search input", "label": "A search input"},
+    {"type": "search", "id": "search", "value": "A search input", "label": "A search input"},
 
     {"type": "checkbox", "id": "checkbox",  "value": "checkbox", "label": "A single checkbox"},
 
     {"type": "radio", "id": "radio",  "value": "radio", "label": "A single radio"},
 
     {
-        "type": "select", "value":"", "label": "Dropdown",
+        "type": "select", "id": "select", "value":"", "label": "Dropdown",
 
         "label": "Dorpdown",
 
@@ -31,9 +31,9 @@
 
         "elements": [
 
-            { "type": "radio", "id": "radioA", "name": "radio1", "value": "radioA", "label": "Radio A"},
-            { "type": "radio", "id": "radioB", "name": "radio1", "value": "radioB", "label": "Radio B"},
-            { "type": "radio", "id": "radioC","name":"radio1", "value": "radioC", "label": "Radio C"}
+            { "type": "radio", "id": "radioA", "name": "radioGroup", "value": "radioA", "label": "Radio A"},
+            { "type": "radio", "id": "radioB", "name": "radioGroup", "value": "radioB", "label": "Radio B"},
+            { "type": "radio", "id": "radioC", "name": "radioGroup", "value": "radioC", "label": "Radio C"}
 
         ]
     },
@@ -43,9 +43,9 @@
 
         "elements": [
 
-            { "type": "checkbox", "id": "checkboxA", "name": "checkbox1", "value": "checkboxA", "label": "Checkbox A"},
-            { "type": "checkbox", "id": "checkboxB", "name": "checkbox1", "value": "checkboxB", "label": "Checkbox B"},
-            { "type": "checkbox", "id": "checkboxC", "name": "checkbox1", "value": "checkboxC", "label": "Checkbox C"}
+            { "type": "checkbox", "id": "checkboxA", "name": "checkboxGroup", "value": "checkboxA", "label": "Checkbox A"},
+            { "type": "checkbox", "id": "checkboxB", "name": "checkboxGroup", "value": "checkboxB", "label": "Checkbox B"},
+            { "type": "checkbox", "id": "checkboxC", "name": "checkboxGroup", "value": "checkboxC", "label": "Checkbox C"}
 
         ]
     }
